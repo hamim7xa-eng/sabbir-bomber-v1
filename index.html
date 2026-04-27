@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>SR BOMBER V1 | SABBIR BOMBER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="sms-mode">
+    <div class="falling-container" id="fallingContainer"></div>
+	
+<div id="disclaimerBox" class="disclaimer-overlay" style="display:none;">
+  <div class="disclaimer-card">
+    <h2>⚠️ Notice</h2>
+    <p>
+      এই ওয়েবসাইটটি শুধুমাত্র বন্ধুদের সাথে মজা করার জন্য; যদি কেউ ইচ্ছাকৃতভাবে এটি খারাপ উদ্দেশ্যে ব্যবহার করে, তবে তার জন্য ব্যবহারকারী সম্পূর্ণভাবে দায়ী থাকবে।
+    </p>
+    <button id="agreeBtn">I Agree</button>
+  </div>
+</div>
+    <div id="joinOverlay" class="join-overlay">
+        <div class="join-card">
+			<img src="https://i.ibb.co.com/5x9vMMBv/Chat-GPT-Image-Jan-21-2026-08-55-10-AM.png" 
+style="width:50px; height:50px; border-radius:50%;">
+            <h2> FOLLOW THIS STEP</h2>
+            <p>⚠️THIS WEBSITE IS CREATED ENTIRELY FOR EDUCATIONAL PURPOSES.SABBIR BOMBER V1⚠️</p>
+            <a href="https://t.me/sabbir7xs" target="_blank" class="join-link">
+                <i class="fas fa-play-circle"></i>  HOW TO USE </a>
+				
+            <div class="username"><i class="fab fa-telegram"></i> Telegram Username:<strong>@sabbirhassan2</strong></div>
+            <p style="font-size: 0.8rem;"> Dev X Sabbir.</p>
+            <button id="verifyJoinBtn" class="verify-btn"><i class="fas fa-check-circle"></i>  ACCESS NOW </button>
+        </div>
+    </div>
+    <div id="mainUI" class="main-container" style="display: none;">
+        <div class="control-panel glass-card">
+            <div class="sr-header">
+                <h1><i class="fas fa-skull-crossbones"></i> SR BOMBER V1</h1>
+                <div class="tag">SABBIR BOMBER // FAST && POWERFUL</div>
+                <div class="channel-name"><i class="fab fa-telegram"></i> @sabbirhassan2 | SABBIR</div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-label"><i class="fas fa-phone"></i> TARGET NUMBER (Bangladesh)</div>
+                <input type="tel" id="phoneNumber" class="input-field" placeholder="01XXXXXXXXX" value="01700000000">
+            </div>
+
+            <div class="mode-switch">
+                <div id="smsModeBtn" class="mode-btn active"><i class="fas fa-envelope"></i> SMS MODE</div>
+                <div id="callModeBtn" class="mode-btn"><i class="fas fa-phone-alt"></i> CALL MODE</div>
+                <div id="romanModeBtn" class="mode-btn"><i class="fas fa-dragon"></i> CALL V1 MODE</div>
+            </div>
+
+            <div class="slider-box">
+                <div class="range-header"><span><i class="fas fa-bomb"></i> NUMBER OF ATTACKS </span><span id="limitValue">100</span></div>
+                <input type="range" id="attackLimit" min="5" max="500" value="100" step="5">
+            </div>
+
+            <div class="delay-row">
+                <i class="fas fa-hourglass-half"></i>
+                <span>DELI (ms)</span>
+                <input type="number" id="delayMs" value="1500" step="100" min="400" max="5000">
+            </div>
+
+            <div class="action-buttons">
+                <button id="startBtn" class="btn btn-start"><i class="fas fa-play"></i> START</button>
+                <button id="stopBtn" class="btn btn-stop"><i class="fas fa-stop"></i> STOP</button>
+                <button id="resetStatsBtn" class="btn btn-reset"><i class="fas fa-chart-line"></i> RESET STATS</button>
+            </div>
+            <footer>⚡ For educational purposes only. | SR HACKER</footer>
+        </div>
+
+        <div class="status-panel glass-card">
+            <div class="status-header">
+                <div><i class="fas fa-tachometer-alt"></i> Live Status</div>
+                <div class="stats-box">
+                    <div>📤 Total: <span id="totalSent">0</span></div>
+                    <div>✗ Failed: <span id="successCount">0</span></div>
+                    <div>✓ Successful: <span id="failCount">0</span></div>
+                </div>
+            </div>
+            <div class="live-status" id="statusArea">
+                <div class="status-card info" style="border-left-color: #0af;">
+                    <span class="code">⚠️ SYSTEM READY</span>
+                    <span class="time">Now</span>
+                    <div class="req-num">SABBIR V1 Active</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+<div class="logo-box">
+  <img src="https://i.ibb.co.com/5x9vMMBv/Chat-GPT-Image-Jan-21-2026-08-55-10-AM.png">
+</div>
+<div class="sr-module">
+  <span class="btn" onclick="showInfo('dev')">
+    <i class="fas fa-user-cog"></i> Developer Info
+  </span>
+
+  <span class="btn" onclick="showInfo('team')">
+    <i class="fas fa-users"></i> Team Info
+  </span>
+
+  <span class="btn" onclick="showInfo('support')">
+    <i class="fas fa-headset"></i> Support
+  </span>
+
+  <div id="info" class="info-box"></div>
+
+</div>
+	<div class="footer">
+		Developed by <b>Sabbir</b> • For Awareness & Security Lab 🇧🇩
+	</div>
+	<script src="sabbirs_bombers.js"></script>
+</body>
+
+</html>
